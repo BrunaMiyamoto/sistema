@@ -15,10 +15,10 @@
             <h1 class="font-bold">Meu Sistema</h1>
             <div>
                 <!-- o flex deixa flexivel e elementos um do lado do outro, com o justify-between o elementos são separados com espaçamento igual, colocando dentro de div o flex entende que passa a ter apenas dois blocos e não 4 como antes -->
-                <span>Olá Fulano</span>
+                <!-- <span>Olá Fulano</span> -->
                 <!-- span tag de formatação inline -->
                 <a href="login" class="bg-white text-blue-600 px-4 py-1 rounded">Login</a>
-                <a href="login/logout.php" class="hover:underline">Sair</a>
+                <!-- <a href="login/logout.php" class="hover:underline">Sair</a> -->
             </div>
         </nav>
     </header>
