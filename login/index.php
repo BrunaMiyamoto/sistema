@@ -24,7 +24,11 @@
                 <label class="block" for="senha">Senha:</label>
                 <input class="w-full border  border-gray-500 rounded p-1" type="password" name="senha" id="senha" placeholder="*********" />
             </div>
-            <button class="bg-blue-500 w-full rounded text-white p-1 hover:bg-blue-300 cursor-pointer transition duration-500" type="submit">Entrar</button>
+            <label>
+                <!-- se no input não estiver estipulado um value, ele reconhecerá como verdadeiro ou falso -->
+                <input type="checkbox" name="lembrar" id="lembrar" /> Lembrar-me
+            </label>
+            <button class="bg-blue-500 w-full rounded text-white p-1 hover:bg-blue-300 cursor-pointer transition duration-500 mt-4" type="submit">Entrar</button>
         </form>
     </div>
 </body>

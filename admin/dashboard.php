@@ -4,7 +4,15 @@ session_start(); //trava de segurança
 
 if (!isset($_SESSION["logado"])) {
 
-    header("Location:../");
+    if (isset($_COOKIE["lembrar_email"])) {
+        $_SESSION["logado"] = true;
+        $_SESSION["email"] = $_COOKIE["lembrar_email"];
+        $_SESSION["nome"] = "Bruna Miyamoto";
+    } else {
+
+        header("Location:../");
+        exit; //coloca logo abaixo do header para que ele não fique carregando sem parar
+    }
 };
 
 ?>
